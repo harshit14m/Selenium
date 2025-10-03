@@ -11,11 +11,12 @@ public class Launch
 		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		//driver.manage().window().minimize();
-		driver.close();
+		//driver.close();
 		String id = driver.getWindowHandle();
 		System.out.println(id);
 		String title = driver.getTitle();
 		System.out.println(title);
+		driver.quit();
 		
 	}
 
